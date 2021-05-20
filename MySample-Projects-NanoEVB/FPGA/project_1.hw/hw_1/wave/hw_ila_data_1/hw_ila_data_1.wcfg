@@ -3,19 +3,19 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/peter/PicoEVB/20191/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="/home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1033320fs"></ZoomEndTime>
+      <ZoomEndTime time="1047042fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wvobject type="logic" fp_name="design_1_i/xdma_0_user_lnk_up">

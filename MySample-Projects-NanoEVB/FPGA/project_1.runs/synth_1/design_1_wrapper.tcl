@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 2
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 create_project -in_memory -part xc7a50tcsg325-2
@@ -25,63 +28,63 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.cache/wt [current_project]
-set_property parent.project_path /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.xpr [current_project]
+set_property webtalk.parent_dir /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.cache/wt [current_project]
+set_property parent.project_path /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.cache/ip [current_project]
+set_property ip_output_repo /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/synth/design_1_xdma_0_0_pcie2_ip_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_1/xdma_v4_1_3_blk_mem_64_reg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_2/xdma_v4_1_3_blk_mem_64_noreg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/bd_e547_microblaze_I_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/bd_e547_microblaze_I_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_1/bd_e547_rst_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_1/bd_e547_rst_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_2/bd_e547_ilmb_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_3/bd_e547_dlmb_0.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_6/bd_e547_lmb_bram_I_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_7/bd_e547_iomodule_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/bd_e547_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/mb_bootloop_le.elf]
-set_property used_in_implementation false [get_files -all /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/data/mb_bootloop_le.elf]
+read_verilog -library xil_defaultlib /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/synth/design_1_xdma_0_0_pcie2_ip_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_1/xdma_v4_1_3_blk_mem_64_reg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_2/xdma_v4_1_3_blk_mem_64_noreg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/bd_e547_microblaze_I_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/bd_e547_microblaze_I_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_1/bd_e547_rst_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_1/bd_e547_rst_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_2/bd_e547_ilmb_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_3/bd_e547_dlmb_0.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_6/bd_e547_lmb_bram_I_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_7/bd_e547_iomodule_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/bd_e547_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ip/ip_0/data/mb_bootloop_le.elf]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -91,8 +94,8 @@ set_property used_in_implementation false [get_files -all /home/peter/nanoevb-pi
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc
-set_property used_in_implementation false [get_files /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc]
+read_xdc /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc
+set_property used_in_implementation false [get_files /home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

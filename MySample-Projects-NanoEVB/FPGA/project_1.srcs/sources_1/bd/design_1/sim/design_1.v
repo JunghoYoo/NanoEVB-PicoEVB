@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Thu May 20 22:13:58 2021
+//Date        : Thu May 20 23:33:03 2021
 //Host        : peter-B150M-DS3H running 64-bit Ubuntu 18.04.5 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -139,7 +139,7 @@ module design_1
   wire S00_AXI_1_WVALID;
   wire [0:0]StatusLEDControl_Res;
   wire UART_rxd_0_1;
-  wire [12:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
+  wire [15:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [63:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
   wire [63:0]axi_bram_ctrl_0_BRAM_PORTA_DOUT;
@@ -342,7 +342,7 @@ module design_1
         .bram_we_a(axi_bram_ctrl_0_BRAM_PORTA_WE),
         .bram_wrdata_a(axi_bram_ctrl_0_BRAM_PORTA_DIN),
         .s_axi_aclk(xdma_0_axi_aclk),
-        .s_axi_araddr(xdma_0_M_AXI_ARADDR[12:0]),
+        .s_axi_araddr(xdma_0_M_AXI_ARADDR[15:0]),
         .s_axi_arburst(xdma_0_M_AXI_ARBURST),
         .s_axi_arcache(xdma_0_M_AXI_ARCACHE),
         .s_axi_aresetn(xdma_0_axi_aresetn),
@@ -353,7 +353,7 @@ module design_1
         .s_axi_arready(xdma_0_M_AXI_ARREADY),
         .s_axi_arsize(xdma_0_M_AXI_ARSIZE),
         .s_axi_arvalid(xdma_0_M_AXI_ARVALID),
-        .s_axi_awaddr(xdma_0_M_AXI_AWADDR[12:0]),
+        .s_axi_awaddr(xdma_0_M_AXI_AWADDR[15:0]),
         .s_axi_awburst(xdma_0_M_AXI_AWBURST),
         .s_axi_awcache(xdma_0_M_AXI_AWCACHE),
         .s_axi_awid(xdma_0_M_AXI_AWID),
@@ -561,7 +561,7 @@ module design_1
         .ss_o(axi_quad_spi_0_SPI_0_SS_O),
         .ss_t(axi_quad_spi_0_SPI_0_SS_T));
   design_1_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
         .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),

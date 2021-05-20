@@ -2,6 +2,9 @@
 
 Modified for NanoEVB from recent PicoEVB Design
 
+# BRAM
+64K for XDMA AXI
+128K for MicroBlaze
 
 # XDMA Driver
 sudo insmod dma_ip_drivers/XDMA/linux-kernel/xdma/xdma.ko

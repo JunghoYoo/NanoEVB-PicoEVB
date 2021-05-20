@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc rfile:../../../xilinx_xdma_pcie_x0y0.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/peter/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc rfile:../../../xilinx_xdma_pcie_x0y0.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:75 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A10 [get_ports sys_rst_n]
 set_property src_info {type:XDC file:1 line:81 export:INPUT save:INPUT read:READ} [current_design]

@@ -6,7 +6,7 @@ import time
 def main():
 
     # Generate some data
-    TRANSFER_SIZE = 4096
+    TRANSFER_SIZE = 64*1024 
     tx_data = bytearray(os.urandom(TRANSFER_SIZE))
 
     # Open files

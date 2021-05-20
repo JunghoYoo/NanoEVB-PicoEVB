@@ -1,0 +1,86 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port sys -pg 1 -lvl 0 -x -40 -y -360 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 9 -x 3160 -y -760 -defaultsOSRD
+preplace port SPI_0 -pg 1 -lvl 9 -x 3160 -y -900 -defaultsOSRD
+preplace port auxio -pg 1 -lvl 9 -x 3160 -y -1310 -defaultsOSRD
+preplace port sys_rst_n -pg 1 -lvl 0 -x -40 -y -270 -defaultsOSRD
+preplace port TxD -pg 1 -lvl 9 -x 3160 -y -10 -defaultsOSRD
+preplace port RxD -pg 1 -lvl 0 -x -40 -y 50 -defaultsOSRD
+preplace portBus di_edge -pg 1 -lvl 0 -x -40 -y -1140 -defaultsOSRD
+preplace portBus clkreq_l -pg 1 -lvl 9 -x 3160 -y -1150 -defaultsOSRD
+preplace portBus do_edge -pg 1 -lvl 9 -x 3160 -y -1020 -defaultsOSRD
+preplace portBus status_leds -pg 1 -lvl 9 -x 3160 -y -450 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 910 -y -420 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 1410 -y -700 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 4 -x 1920 -y -480 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 4 -x 1920 -y -880 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 1410 -y -470 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1920 -y -1330 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 4 -x 1920 -y -1050 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1920 -y -1470 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1920 -y -700 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1920 -y -210 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 500 -y -860 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -x 500 -y -620 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 1 -x 500 -y -740 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 500 -y -360 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 1 -x 500 -y -510 -defaultsOSRD -resize 140 88
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 1410 -y -1260 -defaultsOSRD
+preplace inst clkreq_I_tieoff -pg 1 -lvl 6 -x 2550 -y -1150 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -x 2550 -y -1020 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 5 -x 2220 -y -700 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 6 -x 2550 -y -430 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 6 -x 2550 -y -700 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -x 3040 -y -450 -defaultsOSRD
+preplace inst StatusLEDControl -pg 1 -lvl 7 -x 2820 -y -300 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 1410 -y -320 -defaultsOSRD
+preplace inst microblaze_mcs_0 -pg 1 -lvl 3 -x 1410 -y -30 -defaultsOSRD
+preplace netloc sys_rst_n_0_1 1 0 7 NJ -270 670J -240 1130 -230 1670 -300 N -300 N -300 N
+preplace netloc xdma_0_axi_aclk 1 2 5 1180 -1440 1660 -630 N -630 N -630 2700
+preplace netloc xdma_0_axi_aresetn 1 2 2 1150 -1450 1670
+preplace netloc xlconstant_0_dout 1 4 1 2080 -1470n
+preplace netloc gpio_io_i_0_1 1 0 5 NJ -1140 NJ -1140 1140J -1080 1640J -1140 2080
+preplace netloc clkreq_I_tieoff_dout 1 6 3 N -1150 N -1150 N
+preplace netloc axi_gpio_1_gpio2_io_o 1 4 2 2080 -1020 N
+preplace netloc xlslice_0_Dout 1 6 3 N -1020 N -1020 N
+preplace netloc xlslice_1_Dout 1 5 1 N -700
+preplace netloc xadc_wiz_0_alarm_out 1 4 2 NJ -430 N
+preplace netloc util_vector_logic_1_Res 1 6 2 N -430 N
+preplace netloc util_vector_logic_2_Res 1 6 2 N -700 2930
+preplace netloc xlconcat_0_dout 1 8 1 N -450
+preplace netloc clk_wiz_0_locked 1 3 1 1640 -460n
+preplace netloc xdma_0_user_lnk_up 1 2 2 1140J -220 N
+preplace netloc StatusLEDControl_Res 1 7 1 2940 -470n
+preplace netloc util_vector_logic_0_Res 1 4 3 2080 -280 NJ -280 NJ
+preplace netloc xlconstant_4_dout 1 1 1 650 -510n
+preplace netloc xlconstant_2_dout 1 1 1 660 -620n
+preplace netloc xlconstant_1_dout 1 1 1 680 -860n
+preplace netloc xlconstant_3_dout 1 1 1 670 -740n
+preplace netloc xdma_0_c2h_sts_0 1 2 1 1190J -460n
+preplace netloc xdma_0_h2c_sts_0 1 2 1 1160J -440n
+preplace netloc microblaze_mcs_0_UART_txd 1 3 6 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ
+preplace netloc UART_rxd_0_1 1 0 4 NJ 50 NJ 50 NJ 50 1650
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 N -370
+preplace netloc clk_wiz_0_clk_out1 1 3 1 1680 -890n
+preplace netloc axi_interconnect_0_M02_AXI 1 3 1 1650 -1250n
+preplace netloc CLK_IN_D_0_1 1 0 1 N -360
+preplace netloc xdma_0_M_AXI 1 2 1 1170 -720n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 N -700
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1630 -1350n
+preplace netloc xdma_0_pcie_mgt 1 2 7 1190J -780 NJ -780 NJ -780 N -780 N -780 N -780 3140
+preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1680 -1270n
+preplace netloc axi_quad_spi_0_SPI_0 1 4 5 NJ -900 N -900 N -900 N -900 N
+preplace netloc axi_gpio_0_GPIO2 1 4 5 NJ -1310 NJ -1310 NJ -1310 NJ -1310 NJ
+preplace netloc axi_interconnect_0_M03_AXI 1 3 1 1630 -1230n
+preplace netloc S00_AXI_1 1 2 1 1160 -1380n
+levelinfo -pg 1 -40 500 910 1410 1920 2220 2550 2820 3040 3160
+pagesize -pg 1 -db -bbox -sgen -180 -2350 3330 880
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"9"
+}

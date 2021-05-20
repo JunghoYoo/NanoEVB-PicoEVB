@@ -1,0 +1,668 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 20 22:14:38 2021
+# Process ID: 3077
+# Current directory: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/peter/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a50tcsg325-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tcsg325-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1723.949 ; gain = 151.684 ; free physical = 59035 ; free virtual = 63304
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/peter/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/home/peter/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'StatusLEDControl_imp_1T9W95I' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (2#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_3_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_3_0' (3#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_4_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_4_0' (4#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_5_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_5_0' (5#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 26 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (6#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (7#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'StatusLEDControl_imp_1T9W95I' (8#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (9#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (10#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (11#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_axi_periph_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:720]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1426]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (12#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1426]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1558]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_I4GRPB' (13#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1558]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1BOGR4T' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1690]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1BOGR4T' (14#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1690]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_J0G1J0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1822]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_J0G1J0' (15#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1822]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1954]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (16#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1954]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (17#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 40 connections declared, but only 38 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1385]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_axi_periph_0' (18#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:720]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_quad_spi_0_0' (19#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'design_1_axi_quad_spi_0_0' has 40 connections declared, but only 35 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (20#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' has 8 connections declared, but only 7 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:563]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (21#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_5_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (22#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_5_0' (23#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:577]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_1' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_1' (24#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_ila_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_mcs_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_microblaze_mcs_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_mcs_0_0' (25#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_microblaze_mcs_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (26#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'util_ds_buf_0' of module 'design_1_util_ds_buf_0_0' has 4 connections declared, but only 3 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:587]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (27#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_1_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_1_0' (28#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_2_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_2_0' (29#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xadc_wiz_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xadc_wiz_0_0' (30#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xadc_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'xadc_wiz_0' of module 'design_1_xadc_wiz_0_0' has 31 connections declared, but only 22 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:601]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0' (31#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/.Xil/Vivado-3077-peter-B150M-DS3H/realtime/design_1_xdma_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 85 connections declared, but only 72 given [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:624]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 3 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (32#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (33#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1163280948 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (33#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (34#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 4334 - type: integer 
+	Parameter CONST_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' (34#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (35#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 4 - type: integer 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' (35#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_0' (36#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_3_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 28705 - type: integer 
+	Parameter CONST_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' (36#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_3_0' (37#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_4_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/synth/design_1_xlconstant_4_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_4_0' (38#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/synth/design_1_xlconstant_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (38#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (39#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (39#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (40#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xdma_0'. This will prevent further optimization [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:624]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_0'. This will prevent further optimization [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:591]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:577]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (41#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (42#1) [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_J0G1J0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_J0G1J0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_J0G1J0 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_J0G1J0 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1783.668 ; gain = 211.402 ; free physical = 59059 ; free virtual = 63329
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1789.605 ; gain = 217.340 ; free physical = 59056 ; free virtual = 63325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1789.605 ; gain = 217.340 ; free physical = 59056 ; free virtual = 63325
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_i/xdma_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/axi_quad_spi_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/axi_quad_spi_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_5_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_5_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_2_0/design_1_util_vector_logic_2_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_2'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_2_0/design_1_util_vector_logic_2_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_2'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_3_0/design_1_util_vector_logic_3_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_3'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_3_0/design_1_util_vector_logic_3_0/design_1_util_vector_logic_3_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_3'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_4_0/design_1_util_vector_logic_4_0/design_1_util_vector_logic_4_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_4'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_4_0/design_1_util_vector_logic_4_0/design_1_util_vector_logic_4_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_4'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_5_0/design_1_util_vector_logic_5_0/design_1_util_vector_logic_5_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_5'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_5_0/design_1_util_vector_logic_5_0/design_1_util_vector_logic_5_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/util_vector_logic_5'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/c_counter_binary_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/StatusLEDControl/c_counter_binary_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1/design_1_ila_0_1_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1/design_1_ila_0_1_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_in_context.xdc] for cell 'design_1_i/microblaze_mcs_0'
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0/design_1_microblaze_mcs_0_0_in_context.xdc] for cell 'design_1_i/microblaze_mcs_0'
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc]
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/xilinx_xdma_pcie_x0y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1906.230 ; gain = 0.000 ; free physical = 58961 ; free virtual = 63231
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1906.230 ; gain = 0.000 ; free physical = 58961 ; free virtual = 63231
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '16.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_mcs_0' at clock pin 'Clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 59033 ; free virtual = 63303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg325-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 59033 ; free virtual = 63303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n[0]. (constraint file  /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n[0]. (constraint file  /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p[0]. (constraint file  /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p[0]. (constraint file  /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xadc_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_quad_spi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clkreq_I_tieoff. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/StatusLEDControl/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/StatusLEDControl/util_vector_logic_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/StatusLEDControl/util_vector_logic_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/StatusLEDControl/util_vector_logic_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/StatusLEDControl/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_mcs_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 59036 ; free virtual = 63306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 59033 ; free virtual = 63304
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design design_1_xlslice_1_0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design design_1_xlslice_1_0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design design_1_xlslice_1_0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design design_1_xlslice_0_0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design design_1_xlslice_0_0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_xdma_0_axi_periph_0 has unconnected port M02_ARESETN
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 59022 ; free virtual = 63295
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/xdma_0/axi_aclk' to pin 'design_1_i/xdma_0/bbstub_axi_aclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/axi_bram_ctrl_0/bram_clk_a' to pin 'design_1_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_in1' to pin 'design_1_i/xdma_0/bbstub_axi_aclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out1' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_0/clk_in1' to 'design_1_i/xdma_0/bbstub_axi_aclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/util_ds_buf_0/IBUF_OUT[0]' to pin '{design_1_i/util_ds_buf_0/bbstub_IBUF_OUT[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/util_ds_buf_0/IBUF_DS_ODIV2[0]' to pin '{design_1_i/util_ds_buf_0/bbstub_IBUF_DS_ODIV2[0]/O}'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58903 ; free virtual = 63176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58903 ; free virtual = 63176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_xbar_1                |         1|
+|2     |design_1_axi_bram_ctrl_0_0     |         1|
+|3     |design_1_axi_gpio_0_0          |         1|
+|4     |design_1_axi_gpio_1_0          |         1|
+|5     |design_1_axi_quad_spi_0_0      |         1|
+|6     |design_1_blk_mem_gen_0_0       |         1|
+|7     |design_1_clk_wiz_0_0           |         1|
+|8     |design_1_ila_0_1               |         1|
+|9     |design_1_microblaze_mcs_0_0    |         1|
+|10    |design_1_util_ds_buf_0_0       |         1|
+|11    |design_1_util_vector_logic_0_0 |         1|
+|12    |design_1_util_vector_logic_1_0 |         1|
+|13    |design_1_util_vector_logic_2_0 |         1|
+|14    |design_1_xadc_wiz_0_0          |         1|
+|15    |design_1_xdma_0_0              |         1|
+|16    |design_1_c_counter_binary_0_0  |         1|
+|17    |design_1_util_vector_logic_3_0 |         1|
+|18    |design_1_util_vector_logic_4_0 |         1|
+|19    |design_1_util_vector_logic_5_0 |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |design_1_axi_bram_ctrl_0_0     |     1|
+|2     |design_1_axi_gpio_0_0          |     1|
+|3     |design_1_axi_gpio_1_0          |     1|
+|4     |design_1_axi_quad_spi_0_0      |     1|
+|5     |design_1_blk_mem_gen_0_0       |     1|
+|6     |design_1_c_counter_binary_0_0  |     1|
+|7     |design_1_clk_wiz_0_0           |     1|
+|8     |design_1_ila_0_1               |     1|
+|9     |design_1_microblaze_mcs_0_0    |     1|
+|10    |design_1_util_ds_buf_0_0       |     1|
+|11    |design_1_util_vector_logic_0_0 |     1|
+|12    |design_1_util_vector_logic_1_0 |     1|
+|13    |design_1_util_vector_logic_2_0 |     1|
+|14    |design_1_util_vector_logic_3_0 |     1|
+|15    |design_1_util_vector_logic_4_0 |     1|
+|16    |design_1_util_vector_logic_5_0 |     1|
+|17    |design_1_xadc_wiz_0_0          |     1|
+|18    |design_1_xbar_1                |     1|
+|19    |design_1_xdma_0_0              |     1|
+|20    |IBUF                           |     6|
+|21    |IOBUF                          |     9|
+|22    |OBUF                           |     9|
++------+-------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------------------+------+
+|      |Instance               |Module                       |Cells |
++------+-----------------------+-----------------------------+------+
+|1     |top                    |                             |  1392|
+|2     |  design_1_i           |design_1                     |  1368|
+|3     |    axi_interconnect_0 |design_1_xdma_0_axi_periph_0 |   485|
+|4     |    clkreq_I_tieoff    |design_1_xlconstant_5_0      |     0|
+|5     |    xlconcat_0         |design_1_xlconcat_0_0        |     0|
+|6     |    xlconstant_0       |design_1_xlconstant_0_0      |     0|
+|7     |    xlconstant_1       |design_1_xlconstant_1_0      |     0|
+|8     |    xlconstant_2       |design_1_xlconstant_2_0      |     0|
+|9     |    xlconstant_3       |design_1_xlconstant_3_0      |     0|
+|10    |    xlconstant_4       |design_1_xlconstant_4_0      |     0|
+|11    |    xlslice_0          |design_1_xlslice_0_0         |     0|
+|12    |    xlslice_1          |design_1_xlslice_1_0         |     0|
+|13    |    StatusLEDControl   |StatusLEDControl_imp_1T9W95I |    29|
+|14    |      xlslice_2        |design_1_xlslice_2_0         |     0|
++------+-----------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58901 ; free virtual = 63175
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1909.199 ; gain = 217.340 ; free physical = 58956 ; free virtual = 63229
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1909.199 ; gain = 336.934 ; free physical = 58959 ; free virtual = 63233
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1909.199 ; gain = 0.000 ; free physical = 58902 ; free virtual = 63176
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1909.199 ; gain = 513.102 ; free physical = 58991 ; free virtual = 63265
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1909.199 ; gain = 0.000 ; free physical = 58991 ; free virtual = 63265
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 20 22:15:00 2021...

@@ -1,5 +1,27 @@
 # PicoEVB: M.2/NGFF based Xilinx Artix-7 development board
 
+Modified for NanoEVB from recent PicoEVB Design
+
+
+# XDMA Driver
+sudo insmod dma_ip_drivers/XDMA/linux-kernel/xdma/xdma.ko
+
+# JTAG Virtual Device
+sudo xvcd/linux/bin/xvcd -p 2542
+
+# FPGA XDMA address
+
+- AXI_LITE
+version(axi_gpio_0) 	0x1000 
+led(axi_gpio_1) 	0x2000 
+xadc 			0x3000
+axi_quad_spi 		0x10000
+
+- /dev/
+axi : xdma0_h2c_0, xdma0_c2h_0
+axilite : xdma0_user
+
+
 PicoEVB is an affordable development board which can be used to evaluate and prototype 
 PCI express designs using Xilinx Artix 7 FPGA on Windows or Linux hosts.
 The board is designed around the Artix 7 (XC7A50T).

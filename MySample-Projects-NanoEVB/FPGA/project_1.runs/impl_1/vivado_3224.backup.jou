@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 20 22:15:01 2021
+# Process ID: 3224
+# Current directory: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/peter/nanoevb-picoevb/NanoEVB-PicoEVB/MySample-Projects-NanoEVB/FPGA/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

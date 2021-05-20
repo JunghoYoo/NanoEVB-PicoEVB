@@ -24,6 +24,8 @@ axilite : xdma0_user
 # Configuration Device
 s25FL032p(x4)
 
+# PicoEVB
+
 PicoEVB is an affordable development board which can be used to evaluate and prototype 
 PCI express designs using Xilinx Artix 7 FPGA on Windows or Linux hosts.
 The board is designed around the Artix 7 (XC7A50T).
